@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.tabuleiro {
+    display: grid;
+    grid-template-columns: repeat(4, 100px); 
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 100px;
+    height: 100px;
+    background-color: #2e3d49; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: transparent; 
+    cursor: pointer;
+    
+    
+}
+
+
+.carta.revelada {
+
+    color: initial; 
+    cursor: default;
+    background-color: rgb(163, 163, 163);
+}
